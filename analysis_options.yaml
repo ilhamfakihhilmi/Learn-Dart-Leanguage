@@ -15,10 +15,13 @@ include: package:lints/recommended.yaml
 
 
 # Uncomment the following section to specify additional rules.
-
-# linter:
-#   rules:
-#     - camel_case_types
+analyzer:
+  errors:
+    unused_local_variable: ignore
+linter:
+#     rules:
+#         always_specify_types: true
+#         omit_local_variable_types: false
 
 # analyzer:
 #   exclude:
